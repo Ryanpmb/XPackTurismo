@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Noto Sans", sans-serif;
+
+}
+
+
+
+header{
+    width: 100%;
+    height: 80px;
+
+    display: flex;
+
+    border-bottom: 1px solid gray;
+}
+
+.logo{
+    width: 20%;
+    height: 80px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.logo-txt{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 28pt;
+
+    color: #1f1f20;
+
+}
+
+
+.menu-superior{
+    width: 80%;
+    height: 80px;
+
+    display: flex;
+    align-items: center;
+}
+
+.lista-sup{
+    width: 80%;
+    height: 100%;
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    list-style: none;
+
+    gap: 25px;
+}
+
+.lista-sup li{
+    width: auto;
+    height: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lista-sup a{
+    font-size: 15pt;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    text-decoration: none ;
+
+}
+
+.lista-sup a:hover{
+    color: rgb(7, 123, 190);
+    transform: scale(1.1);
+
+    transition: 0.5s;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f8ff;
+    color: #333;
+}
+
+
+
+
+
+
+.aviao{
+    position: absolute;
+    display: flex;
+
+}
+
+.aviao img{
+    opacity: 40%;
+    width: 90px;
+    height: 90px;
+    margin: 0 4px;
+    overflow: hidden;
+    animation: aviaoanima calc(150s / var(--i)) linear infinite;
+}
+.aviao2{
+    position: absolute;
+    display: flex;
+
+}
+
+.aviao2 img{
+    opacity: 40%;
+    width: 90px;
+    height: 90px;
+    margin: 0 4px;
+    overflow: hidden;
+    animation: aviaoanim2 calc(150s / var(--i)) linear infinite;
+}
+
+main{
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.info-viagem{
+
+    width: 70%;
+    height: 70vh;
+    
+    
+    z-index: 10;
+
+    display: flex;
+
+    border: 1px solid black;
+
+}
+
+.image{
+    width: 25%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.image img{
+    height: 100%;
+}
+
+.desc{
+    width: 75%;
+
+    display: flex;
+    flex-direction: column;
+
+    background-color: #f0f8ff;
+}
+
+.titulo{
+    width: 100%;
+    height: 40px;
+    background-color: rgb(7, 123, 190);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.titulo h2{
+    color: rgb(255, 255, 47);
+}
+
+.sob{
+    margin-top: 40px;
+    margin-left: 30px;
+    text-align: left;
+    width: 80%;
+
+    font-size: 15pt;
+
+}
+
+.final{
+    width: 100%;
+    height: 50px;
+
+    margin-top: 60px;
+
+    display: flex;
+}
+
+
+.valor{
+    width: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.wpp{
+    width: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+
+
+}
+
+.wpp img{
+    width: 30px;
+}
+
+.wpp a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    text-decoration: none;
+    color: black;
+    width: 70%;
+    height: 40px;
+
+    background-color: rgb(2, 196, 2);
+    border-radius: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes aviaoanima{
+    0%{
+        transform: translatex(1200px);
+
+    }
+
+    20%{
+        transform: translatey(400px);
+    }
+
+    40%{
+        transform: translatex(1200px);
+    }
+
+    60%{
+        transform: translatey(20px);
+    }
+
+    100%{
+        transform: translatex(1200px);
+    }
+
+
+
+
+}
+@keyframes aviaoanim2{
+    0%{
+        transform: translatex(10px);
+
+    }
+
+    100%{
+        transform: translatey(420px) translateX(1200px);
+    }
+
+
+
+
+
+
+}

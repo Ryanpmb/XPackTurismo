@@ -1,0 +1,402 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Noto Sans", sans-serif;
+
+}
+
+body{
+    background-color: #f0f8ff;
+}
+
+
+header{
+    width: 100%;
+    height: 80px;
+
+    display: flex;
+
+    border-bottom: 1px solid gray;
+}
+
+.logo{
+    width: 20%;
+    height: 80px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.logo-txt{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 28pt;
+
+    color: #1f1f20;
+
+}
+
+
+.menu-superior{
+    width: 80%;
+    height: 80px;
+
+    display: flex;
+    align-items: center;
+}
+
+.lista-sup{
+    width: 80%;
+    height: 100%;
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    list-style: none;
+
+    gap: 25px;
+}
+
+.lista-sup li{
+    width: auto;
+    height: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lista-sup a{
+    font-size: 15pt;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    text-decoration: none ;
+
+}
+
+.lista-sup a:hover{
+    color: rgb(7, 123, 190);
+    transform: scale(1.1);
+
+    transition: 0.5s;
+}
+
+/*Fim Cabeçalho*/
+
+main{
+    width: 100%;
+    
+}
+
+.parte-azul{
+    width: 100%;
+    height: 200px;
+
+    display: flex;
+
+    background-color: rgb(143, 198, 235);
+
+    box-shadow: 1px 1px 1px 1px black;
+}
+
+.frase{
+    width: 100%;
+    height: 200px;
+
+    background-color: rgb(7, 123, 190);
+
+
+    font-size: 20pt;
+    color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #000;
+    
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#destinos {
+    padding: 20px;
+}
+
+.destinos-container {
+    display: flex;
+    
+}
+
+.destino-card {
+    width: calc(25% - 20px);
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+    text-decoration: none;
+
+    color: black;
+}
+
+.destino-card:hover{
+    transform: scale(1.05);
+}
+
+.destino-card img {
+    width: 100%;
+    height: 80%;
+    border-radius: 5px;
+}
+
+.destino-card p {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+
+
+
+.sobre-nos{
+    width: 100%;
+    height: 500px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.sobre-nos-texto{
+    width: 80%;
+    height: 95%;
+
+    display: flex;
+    flex-direction: column;
+
+    background-color: rgb(7, 123, 190);
+    border-top: 1px solid gray;
+    border-left: 1px solid gray;
+
+    box-shadow: 2px 2px 2px black; 
+}
+
+.titulo-sobre{
+    margin-top: 35px;
+
+    width: 100%;
+    height: 40px;
+
+    font-size: 20pt;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+.titulo-sobre h1{
+    margin-left: 150px;
+}
+
+.texto-sobre{
+    width: 100%;
+    height: 300px;
+
+    margin-top: 40px;
+
+    
+    font-size: 18pt;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+    
+
+}
+
+.texto-sobre p{
+    width: 70%;
+
+    margin-left: 200px;
+}
+
+.malas{
+    bottom: 190px;
+
+
+    position: relative;
+    width: 250px;
+    
+
+    opacity: 40%;
+}
+
+footer{
+    margin-top: 50px;
+
+
+    width: 100%;
+    height: 300px;
+    background-color: rgb(5, 78, 121);
+}
+
+.rodape a{
+    text-decoration: none;
+    color: white;
+}
+.rodape p{
+    margin-bottom: 5px;
+}
+.rodape-div{
+    display: flex;
+    flex-wrap: wrap;
+    width:100%;
+    margin: auto;
+    align-items: stretch;
+    padding: 60px 10px 40px 10px;
+}
+.rodape-div-1, .rodape-div-2, .rodape-div-3, .rodape-div-4{
+    display: flex;
+    width: calc(100% / 4 - 20px);
+    padding: 10px;
+}
+.rodape span{
+    font-size: 20px;
+    color: black;
+}
+.rodape-direitos{
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 0px;
+    text-align: center;
+}
+/*mobile*/
+@media (max-width: 768px) {
+    .rodape-div-1, .rodape-div-2, .rodape-div-3, .rodape-div-4{
+        width: calc(50% - 20px);
+        padding: 10px;
+    }
+    .rodape-div{
+        padding: 60px 0px 40px 0px;
+    }
+}
+
+
+
+
+
+
+
+
+/*Efeito fundo*/
+
+.cifrao{
+    position: absolute;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.cifrao img{
+    opacity: 40%;
+    width: 60px;
+    height: 60px;
+    margin: 0 4px;
+    overflow: hidden;
+    animation: animar calc(150s / var(--i)) linear infinite;
+}
+
+.cifrao1 h1{
+    opacity: 40%;
+    font-size: 30px;
+    width: 30px;
+    height: 30px;
+    margin: 0 4px;
+    color: white;
+    overflow: hidden;
+    animation: animar calc(150s / var(--i)) linear infinite;
+}
+
+.aviao{
+    position: absolute;
+    display: flex;
+
+}
+
+.aviao img{
+    opacity: 40%;
+    width: 90px;
+    height: 90px;
+    margin: 0 4px;
+    overflow: hidden;
+    animation: aviaoanima calc(150s / var(--i)) linear infinite;
+}
+.aviao2{
+    position: absolute;
+    display: flex;
+
+}
+
+.aviao2 img{
+    opacity: 40%;
+    width: 90px;
+    height: 90px;
+    margin: 0 4px;
+    overflow: hidden;
+    animation: aviaoanim2 calc(150s / var(--i)) linear infinite;
+}
+
+@keyframes animar {
+    0%{
+        transform: translatey(195px) scale(0);
+
+    }
+
+    100%{
+        transform: translatey(-5%) scale(1.1);
+    }
+}
+
+@keyframes aviaoanima{
+    0%{
+        transform: translatex(900px);
+
+    }
+
+    20%{
+        transform: translatey(400px);
+    }
+
+    40%{
+        transform: translatex(900px);
+    }
+
+    60%{
+        transform: translatey(20px);
+    }
+
+    100%{
+        transform: translatex(900px);
+    }
+
+
+
+
+}
+@keyframes aviaoanim2{
+    0%{
+        transform: translatex(10px);
+
+    }
+
+    100%{
+        transform: translatey(420px) translateX(1200px);
+    }
+
+
+
+
+
+
+}
